@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require('cors')
 const bodyParser = require("body-parser");
 const sequelize = require("./config/database");
 const actorRoutes = require("./routes/actors");
@@ -9,6 +10,8 @@ const { swaggerUi, swaggerDocs } = require("./utils/swaggerConfig");
 const app = express();
 const port = 3000;
 
+//CORS
+app.use(cors())
 app.use(bodyParser.json());
 
 // Swagger Config
