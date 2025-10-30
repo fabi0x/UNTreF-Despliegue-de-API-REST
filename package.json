@@ -1,0 +1,25 @@
+{
+  "name": "53 - Despliegue de API REST",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:local": "cross-env NODE_ENV=local node src/index.js",
+    "start:local_railway": "cross-env NODE_ENV=local_railway node src/index.js",
+    "start": "cross-env NODE_ENV=production node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mysql2": "^3.15.3",
+    "sequelize": "^6.37.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
